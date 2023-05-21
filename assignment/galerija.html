@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Kreiranje responsive galerije</title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+
+        .main {
+            margin: 50px auto;
+            max-width: 960px;
+            width: 80%;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+        }
+
+        .col {
+            height: 100px;
+            min-width: 152px;
+            margin-bottom: 28px;
+            box-sizing: border-box;
+            margin-right: 40px;
+
+
+        }
+
+        p {
+            margin-right: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .main {
+                max-width: 576px;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .main {
+                max-width: 373px;
+            }
+
+            #gallery {
+                justify-content: center;
+
+            }
+
+            h1 {
+                text-align: center;
+                margin-right: 40px;
+            }
+        }
+
+        .pic {
+            background-image: url("images/placeholder-image.png");
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-position: center;
+            background-size: cover;
+            background-color: #6ba2d9;
+
+            height: 80%;
+            width: 100%;
+        }
+
+        .title {
+            font-family: sans-serif;
+            font-size: 12px;
+            height: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #faf7ff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Gallery Heading</h1>
+        <div id="gallery">
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+            <div class="col">
+                <div class="pic"></div>
+                <div class="title"><span>Image Title</span></div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, maiores laborum dignissimos suscipit rem
+            veritatis officia voluptatum mollitia doloremque repudiandae quae, officiis, consequuntur voluptatibus!
+            Provident distinctio vitae ut facere, debitis quo recusandae doloribus iusto hic! Sed impedit debitis natus,
+            nam
+            cum odit doloribus iste numquam quasi totam eos officia. Accusamus excepturi quod architecto perspiciatis,
+            officia quo ipsa nihil repudiandae beatae voluptatem temporibus maiores nesciunt error ut enim quas! Qui
+            eaque
+            temporibus libero? Officia architecto autem ratione id, expedita itaque nostrum aspernatur minus ducimus,
+            earum
+            iure eveniet corrupti laborum voluptatem ipsam ea aut saepe culpa odit, quaerat consequuntur voluptate vel.
+        </p>
+    </div>
+</body>
+
+</html>
